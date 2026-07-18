@@ -1,0 +1,74 @@
+{
+  "zero_shot": {
+    "accuracy": 0.844,
+    "macro_f1": 0.8417539325837629,
+    "median_latency_ms": 93.58441149993268,
+    "p99_latency_ms": 110.65666200011037,
+    "peak_gpu_memory_mb": 746.61962890625
+  },
+  "few_shot": {
+    "k_2": {
+      "accuracy": 0.612,
+      "macro_f1": 0.605610927486006,
+      "median_latency_ms": 9.187966000013148,
+      "p99_latency_ms": 14.573302999906446
+    },
+    "k_4": {
+      "accuracy": 0.708,
+      "macro_f1": 0.7044043789750041,
+      "median_latency_ms": 6.614499499960402,
+      "p99_latency_ms": 10.566834999963248
+    },
+    "k_8": {
+      "accuracy": 0.808,
+      "macro_f1": 0.8055511060242824,
+      "median_latency_ms": 9.4297564999124,
+      "p99_latency_ms": 16.81407000000945
+    },
+    "k_16": {
+      "accuracy": 0.824,
+      "macro_f1": 0.8253690978027807,
+      "median_latency_ms": 6.544456000028731,
+      "p99_latency_ms": 11.084755000183577
+    },
+    "peak_gpu_memory_mb": 2422.4482421875,
+    "sensitivity_k_8": {
+      "accuracy_mean": 0.824,
+      "accuracy_std": 0.011430952132988175
+    }
+  },
+  "fine_tuned": {
+    "training_time_minutes": 12.944515296949998,
+    "peak_training_gpu_memory_mb": 1959.24853515625,
+    "evaluation": {
+      "accuracy": 0.944,
+      "macro_f1": 0.9447434663982519
+    },
+    "inference_bs_1": {
+      "median_latency_ms": 7.647552499975063,
+      "p99_latency_ms": 14.247931999761931
+    },
+    "inference_bs_128": {
+      "median_latency_ms": 117.56476150003436,
+      "p99_latency_ms": 126.23797600008402
+    },
+    "peak_inference_gpu_memory_mb": 1189.93212890625,
+    "data_efficiency": {
+      "n_100": {
+        "accuracy": 0.6835
+      },
+      "n_500": {
+        "accuracy": 0.8715
+      },
+      "n_2000": {
+        "accuracy": 0.8995
+      },
+      "n_10000": {
+        "accuracy": 0.911
+      },
+      "n_120000": {
+        "accuracy": 0.944
+      }
+    }
+  }
+}
